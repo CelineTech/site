@@ -10,8 +10,16 @@ const ebGaramond = EB_Garamond({
   display: 'swap',
 })
 
+// Atualizar com o domínio real antes do deploy
+const siteUrl = 'https://celinetech.com.br'
+
 export const metadata: Metadata = {
-  title: 'Celine Tech | Desenvolvimento, Automação e IA',
+  metadataBase: new URL(siteUrl),
+
+  title: {
+    default: 'Celine Tech | Desenvolvimento, Automação e IA',
+    template: '%s | Celine Tech',
+  },
   description:
     'Transforme seu negócio com tecnologia que funciona. A Celine Tech desenvolve sistemas, automações e soluções de IA para empresas que querem crescer com eficiência.',
   keywords: [
@@ -19,23 +27,50 @@ export const metadata: Metadata = {
     'automação de processos',
     'inteligência artificial',
     'agência de tecnologia',
+    'chatbot',
+    'dashboard',
     'Celine Tech',
   ],
+
   openGraph: {
     title: 'Celine Tech | Desenvolvimento, Automação e IA',
-    description: 'Transforme seu negócio com tecnologia que funciona.',
-    type: 'website',
-    locale: 'pt_BR',
+    description:
+      'Transforme seu negócio com tecnologia que funciona. Sistemas, automações e IA para empresas que querem crescer.',
+    url: siteUrl,
     siteName: 'Celine Tech',
+    locale: 'pt_BR',
+    type: 'website',
+    images: [
+      {
+        url: '/opengraph-image',
+        width: 1200,
+        height: 630,
+        alt: 'Celine Tech — Desenvolvimento, Automação e IA',
+      },
+    ],
   },
+
   twitter: {
     card: 'summary_large_image',
     title: 'Celine Tech | Desenvolvimento, Automação e IA',
     description: 'Transforme seu negócio com tecnologia que funciona.',
+    images: ['/opengraph-image'],
+    creator: '@celinetech_',
   },
+
   robots: {
     index: true,
     follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+
+  alternates: {
+    canonical: siteUrl,
   },
 }
 
