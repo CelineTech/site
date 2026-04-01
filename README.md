@@ -16,7 +16,7 @@
 
 A **Celine Tech** é uma agência de tecnologia focada em atender pequenas e médias empresas, MEIs e startups que precisam de soluções digitais eficientes e acessíveis.
 
-Este repositório contém o **site institucional completo** da agência, desenvolvido com Next.js 14 (App Router), Tailwind CSS e Framer Motion. O site apresenta os serviços da empresa, cases reais de projetos entregues, depoimentos de clientes e canais de contato — tudo com uma identidade visual elegante, sofisticada e alinhada à marca.
+Este repositório contém o **site institucional completo** da agência, desenvolvido com Next.js 14, Tailwind CSS e Framer Motion. O site apresenta os serviços da empresa, cases reais de projetos entregues, depoimentos de clientes e canais de contato, tudo com uma identidade visual elegante, sofisticada e alinhada à marca. :)
 
 ---
 
@@ -62,40 +62,6 @@ Página minimalista com os 3 principais canais de acesso:
 
 ---
 
-## 🚀 Como rodar localmente
-
-### Pré-requisitos
-
-- Node.js 18+
-- npm ou yarn
-
-### Passo a passo
-
-```bash
-# 1. Clone o repositório
-git clone https://github.com/seu-usuario/site.git
-cd site
-
-# 2. Instale as dependências
-npm install
-
-# 3. Inicie o servidor de desenvolvimento
-npm run dev
-```
-
-Acesse em: [http://localhost:3000](http://localhost:3000)
-
-### Scripts disponíveis
-
-```bash
-npm run dev      # Servidor de desenvolvimento
-npm run build    # Build de produção
-npm run start    # Inicia o build de produção localmente
-npm run lint     # Verifica erros de lint
-```
-
----
-
 ## 📁 Estrutura de pastas
 
 ```
@@ -135,17 +101,6 @@ npm run lint     # Verifica erros de lint
 ## ☁️ Deploy
 
 O deploy é feito automaticamente via **[Vercel](https://vercel.com)**.
-
-Cada push na branch `main` dispara um novo deploy de produção. Pull requests geram automaticamente um **preview URL** para revisão antes de ir ao ar.
-
-### Configuração de variáveis
-
-Antes do primeiro deploy, atualize a variável `siteUrl` em `app/layout.tsx` com o domínio real:
-
-```ts
-// app/layout.tsx
-const siteUrl = 'https://celinetech.com.br' // ← atualizar aqui
-```
 
 ---
 
