@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { EB_Garamond } from 'next/font/google'
+import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
 const ebGaramond = EB_Garamond({
@@ -81,7 +82,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR" className={ebGaramond.variable}>
-      <body>{children}</body>
+      <body>
+        {children}
+        <Analytics />
+      </body>
     </html>
   )
 }
