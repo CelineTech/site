@@ -33,7 +33,7 @@ export default function FinalCTA() {
             Vamos conversar?
           </span>
           <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-ct-off-white mb-6 leading-tight">
-            Pronta para transformar{' '}
+            Pronto para transformar{' '}
             <span className="text-ct-rose-mid italic">seu negócio?</span>
           </h2>
           <p className="font-sans text-base text-ct-rose-light/65 mb-11 leading-relaxed max-w-xl mx-auto">
@@ -43,7 +43,7 @@ export default function FinalCTA() {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="https://wa.me/5500000000000"
+              href="https://wa.link/rv9nvp"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2.5 px-8 py-4 bg-ct-rose-dark text-ct-off-white font-sans text-sm tracking-wide rounded-full hover:bg-ct-rose-mid transition-all duration-300 hover:shadow-[0_0_32px_rgba(192,96,112,0.5)]"
@@ -55,7 +55,7 @@ export default function FinalCTA() {
               Falar pelo WhatsApp
             </a>
             <a
-              href="https://calendly.com/celinetech"
+              href="https://calendly.com/camillyvianna"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2.5 px-8 py-4 border border-ct-rose-dark/55 text-ct-rose-light font-sans text-sm tracking-wide rounded-full hover:bg-ct-rose-dark/10 hover:border-ct-rose-dark transition-all duration-300"
